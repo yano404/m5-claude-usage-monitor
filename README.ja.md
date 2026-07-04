@@ -6,6 +6,8 @@ M5Stack Core2でClaudeの利用状況を表示する小型モニターです。
 
 ClaudeのOAuth tokenを使って、5時間枠と7日枠の使用率、リセットまでの残り時間、現在の状態を表示します。
 
+![M5ClaudeUsageMonitor dashboard](docs/img/m5-claude-usage-monitor-dashboard.png)
+
 ## Hardware
 
 - M5Stack Core2
@@ -32,6 +34,8 @@ URL: http://192.168.4.1
 PCまたはスマートフォンでこのWiFiに接続し、ブラウザで `http://192.168.4.1` を開きます。
 
 設定画面で以下を入力します。
+
+<img src="docs/img/screenshot_m5-claude-usage-monitor-config.png" alt="設定画面" width="480">
 
 - WiFi SSID
 - WiFi password

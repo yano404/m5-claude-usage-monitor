@@ -6,6 +6,8 @@ A M5Stack Core2 monitor for Claude usage.
 
 It uses a Claude OAuth token to show current usage, the 5-hour and 7-day usage windows, reset times, and the current rate-limit status.
 
+![M5ClaudeUsageMonitor dashboard](docs/img/m5-claude-usage-monitor-dashboard.png)
+
 ## Hardware
 
 - M5Stack Core2
@@ -32,6 +34,8 @@ URL: http://192.168.4.1
 Connect to this WiFi network from your computer or phone, then open `http://192.168.4.1` in a browser.
 
 Enter the following values on the setup page.
+
+<img src="docs/img/screenshot_m5-claude-usage-monitor-config.png" alt="Setup page" width="480">
 
 - WiFi SSID
 - WiFi password
