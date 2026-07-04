@@ -403,7 +403,7 @@ String countdown(uint32_t epoch) {
   uint32_t mins = (remaining % 3600) / 60;
   char buf[18];
   if (days > 0) snprintf(buf, sizeof(buf), "%ud %02uh", days, hours);
-  else snprintf(buf, sizeof(buf), "%02uh %02um", hours, mins);
+  else snprintf(buf, sizeof(buf), "%uh %02um", hours, mins);
   return String(buf);
 }
 
@@ -550,9 +550,10 @@ void drawUsageCard(const char* label, const char* windowLabel, float pct, uint32
 
   UI().setTextSize(1);
   UI().setTextColor(muted, panel);
-  UI().drawRightString("reset", x + w - 16, y + 39, 1);
+  UI().drawRightString("reset", x + w - 16, y + 33, 1);
+  UI().setTextSize(2);
   UI().setTextColor(rgb(210, 215, 211), panel);
-  UI().drawRightString(countdown(resetEpoch), x + w - 16, y + 53, 1);
+  UI().drawRightString(countdown(resetEpoch), x + w - 16, y + 45, 1);
 
   int barX = x + 16;
   int barY = y + h - 17;
